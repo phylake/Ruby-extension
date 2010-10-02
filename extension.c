@@ -53,5 +53,5 @@ static VALUE m_rotate(VALUE self, VALUE coords, VALUE theta_val) {
 void Init_matrices() {
 	VALUE matrixMod = rb_define_module("Matrices");
 	rb_define_module_function(matrixMod, "rotate", m_rotate, 2);
-	rb_define_module_function(matrixMod, "transform", m_transform, 3);
+	rb_define_module_function(matrixMod, "transform", m_transform, 2);
 }
